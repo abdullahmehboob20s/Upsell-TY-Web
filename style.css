@@ -38,7 +38,7 @@ footer {
 }
 
 .h-100 {
-  min-height: 100vh;
+  min-height: auto;
   /* border: 2px solid red; */
 }
 
