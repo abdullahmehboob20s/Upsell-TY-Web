@@ -180,6 +180,7 @@ li {
   align-items: center;
   gap: 0.7rem;
   text-decoration: none;
+  width: fit-content;
 }
 
 .scrolldown-indicator-titles p:nth-child(1) {
@@ -484,6 +485,49 @@ button:hover {
   font-size: 13.385px;
   color: rgb(165, 165, 165);
   line-height: 1.2;
+}
+
+/*  */
+.scroll-down {
+  height: 36px;
+  width: 26px;
+  border: 2px solid #3393c2;
+  position: relative;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  height: 6px;
+  width: 6px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #3393c2;
+  border-top: transparent;
+  border-left: transparent;
+}
+
+.scrolldown-indicator:hover .scroll-down::before {
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 70%;
+    opacity: 0;
+  }
 }
 
 /*  */
