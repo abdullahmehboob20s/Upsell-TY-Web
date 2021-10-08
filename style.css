@@ -37,8 +37,12 @@ footer {
   margin-bottom: 50px;
 }
 
+.block {
+  display: block;
+}
+
 .h-100 {
-  min-height: 700px;
+  min-height: 700px !important;
   /* border: 2px solid red; */
 }
 
@@ -313,7 +317,9 @@ li {
   padding-left: 1rem;
 }
 .sec-details-title-li {
-  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 .sec-details-title-li p {
   font-size: 16.265px;
@@ -585,6 +591,60 @@ button:hover {
 
   .mt-100 {
     margin-top: 50px;
+  }
+
+  .block {
+    display: inline;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 600px) {
+  .sec-title {
+    font-size: 25px;
+  }
+
+  .sec-subtitle {
+    font-size: 18px;
+    margin-top: 1.5rem;
+  }
+
+  .sec-details-title {
+    font-size: 16px !important;
+  }
+
+  .sec-details-title-li p {
+    font-size: 14px;
+  }
+
+  .sec-pricing-title {
+    font-size: 14px;
+  }
+
+  .header-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .alternative {
+    gap: 1rem;
+  }
+
+  .alternative-brands {
+    gap: 1rem;
+  }
+
+  .sec-details-title-list {
+    margin-top: 1.5rem;
+  }
+
+  .sec-pricing {
+    /* border: 2px solid red; */
+    margin-top: 2.8rem;
   }
 }
 
